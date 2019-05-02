@@ -6,7 +6,7 @@
 from flask_restful import Api
 
 # Apps
-from apps.aluno.resource import Index
+from apps.index.resource import Index
 from apps.anamnese.resource import addAnamnese
 
 api = Api()
