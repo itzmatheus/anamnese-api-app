@@ -9,6 +9,7 @@ from apps.isda.coluna_vertebral.schemas import ColunaVertebralSchema
 from apps.isda.musculos.schemas import MusculosSchema
 from apps.isda.nervoso.schemas import NervosoSchema
 from apps.isda.habidos_de_vida.schemas import HabitosDeVidaSchema
+from apps.isda.abdome.schemas import AbdomeSchema
 
 
 class IsdaSchema(Schema):
@@ -16,3 +17,4 @@ class IsdaSchema(Schema):
     musculos = Nested(MusculosSchema)
     nervoso = Nested(NervosoSchema)
     habidos_de_vida = Nested(HabitosDeVidaSchema)
+    abdome = Nested(AbdomeSchema)

@@ -18,6 +18,7 @@ from apps.isda.coluna_vertebral.models import ColunaVertebral
 from apps.isda.musculos.models import Musculos
 from apps.isda.nervoso.models import Nervoso
 from apps.isda.habidos_de_vida.models import HabitosDeVida
+from apps.isda.abdome.models import Abdome
 
 
 class Isda(EmbeddedDocument):
@@ -31,3 +32,4 @@ class Isda(EmbeddedDocument):
     musculos = EmbeddedDocumentField(Musculos, default=Musculos)
     nervoso = EmbeddedDocumentField(Nervoso, default=Nervoso)
     habidos_de_vida = EmbeddedDocumentField(HabitosDeVida, default=HabitosDeVida)
+    abdome = EmbeddedDocumentField(Abdome, default=Abdome)
