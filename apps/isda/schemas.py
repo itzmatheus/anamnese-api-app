@@ -13,6 +13,7 @@ from apps.isda.abdome.schemas import AbdomeSchema
 from apps.isda.ecstocopia.schemas import EcstocopiaSchema
 from apps.isda.sintomas_gerais.schemas import SintomasGeraisSchema
 from apps.isda.antecedentes.schemas import AntecedentesSchema
+from apps.isda.sistema_geniturinario.schemas import SistemaGeniturinarioSchema
 
 
 class IsdaSchema(Schema):
@@ -24,3 +25,4 @@ class IsdaSchema(Schema):
     ecstocopia = Nested(EcstocopiaSchema)
     sintomas_gerais = Nested(SintomasGeraisSchema)
     antecedentes = Nested(AntecedentesSchema)
+    sistema_geniturinario = Nested(SistemaGeniturinarioSchema)
