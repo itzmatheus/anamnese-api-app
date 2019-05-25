@@ -16,6 +16,7 @@ from mongoengine import (
 from main.db.db import db
 from apps.isda.coluna_vertebral.models import ColunaVertebral
 from apps.isda.musculos.models import Musculos
+from apps.isda.nervoso.models import Nervoso
 
 
 class Isda(EmbeddedDocument):
@@ -27,3 +28,4 @@ class Isda(EmbeddedDocument):
     coluna_vertebral = EmbeddedDocumentField(ColunaVertebral,
         default=ColunaVertebral)
     musculos = EmbeddedDocumentField(Musculos, default=Musculos)
+    nervoso = EmbeddedDocumentField(Nervoso, default=Nervoso)
