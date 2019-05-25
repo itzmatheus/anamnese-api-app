@@ -19,6 +19,7 @@ from apps.isda.musculos.models import Musculos
 from apps.isda.nervoso.models import Nervoso
 from apps.isda.habidos_de_vida.models import HabitosDeVida
 from apps.isda.abdome.models import Abdome
+from apps.isda.ecstocopia.models import Ecstocopia
 
 
 class Isda(EmbeddedDocument):
@@ -33,3 +34,4 @@ class Isda(EmbeddedDocument):
     nervoso = EmbeddedDocumentField(Nervoso, default=Nervoso)
     habidos_de_vida = EmbeddedDocumentField(HabitosDeVida, default=HabitosDeVida)
     abdome = EmbeddedDocumentField(Abdome, default=Abdome)
+    ecstocopia = EmbeddedDocumentField(Ecstocopia, default=Ecstocopia)

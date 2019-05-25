@@ -10,6 +10,7 @@ from apps.isda.musculos.schemas import MusculosSchema
 from apps.isda.nervoso.schemas import NervosoSchema
 from apps.isda.habidos_de_vida.schemas import HabitosDeVidaSchema
 from apps.isda.abdome.schemas import AbdomeSchema
+from apps.isda.ecstocopia.schemas import EcstocopiaSchema
 
 
 class IsdaSchema(Schema):
@@ -18,3 +19,4 @@ class IsdaSchema(Schema):
     nervoso = Nested(NervosoSchema)
     habidos_de_vida = Nested(HabitosDeVidaSchema)
     abdome = Nested(AbdomeSchema)
+    ecstocopia = Nested(EcstocopiaSchema)
