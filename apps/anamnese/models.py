@@ -15,6 +15,7 @@ from mongoengine import (
 from main.db.db import db
 from apps.aluno.models import Aluno
 from apps.paciente.models import Paciente
+from apps.isda.models import Isda
 
 
 class Anamnese(db.Document):
@@ -25,4 +26,5 @@ class Anamnese(db.Document):
 
     aluno = EmbeddedDocumentField(Aluno, default=Aluno)
     paciente = EmbeddedDocumentField(Paciente, default=Paciente)
+    isda = EmbeddedDocumentField(Isda, default=Isda)
     created_at = DateTimeField(default=datetime.now)
