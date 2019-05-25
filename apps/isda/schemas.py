@@ -11,6 +11,7 @@ from apps.isda.nervoso.schemas import NervosoSchema
 from apps.isda.habidos_de_vida.schemas import HabitosDeVidaSchema
 from apps.isda.abdome.schemas import AbdomeSchema
 from apps.isda.ecstocopia.schemas import EcstocopiaSchema
+from apps.isda.sintomas_gerais.schemas import SintomasGeraisSchema
 
 
 class IsdaSchema(Schema):
@@ -20,3 +21,4 @@ class IsdaSchema(Schema):
     habidos_de_vida = Nested(HabitosDeVidaSchema)
     abdome = Nested(AbdomeSchema)
     ecstocopia = Nested(EcstocopiaSchema)
+    sintomas_gerais = Nested(SintomasGeraisSchema)
