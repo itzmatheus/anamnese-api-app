@@ -15,7 +15,7 @@ from mongoengine import (
 # Apps
 from main.db.db import db
 from apps.exame_fisico.respiratorio.models import Respiratorio
-
+from apps.exame_fisico.cardiovascular.models import Cardiovascular
 
 class ExameFisico(EmbeddedDocument):
     '''
@@ -25,3 +25,5 @@ class ExameFisico(EmbeddedDocument):
 
     respiratorio = EmbeddedDocumentField(Respiratorio,
         default=Respiratorio)
+    cardiovascular = EmbeddedDocumentField(Cardiovascular,
+        default=Cardiovascular)
