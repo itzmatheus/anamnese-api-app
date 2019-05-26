@@ -24,6 +24,7 @@ from apps.isda.sintomas_gerais.models import SintomasGerais
 from apps.isda.antecedentes.models import Antecedentes
 from apps.isda.sistema_geniturinario.models import SistemaGeniturinario
 from apps.isda.sistema_hemolinfopetico.models import SistemaHemolinfopetico
+from apps.isda.torax.models import Torax
 
 
 class Isda(EmbeddedDocument):
@@ -43,3 +44,4 @@ class Isda(EmbeddedDocument):
     antecedentes = EmbeddedDocumentField(Antecedentes, default=Antecedentes)
     sistema_geniturinario = EmbeddedDocumentField(SistemaGeniturinario, default=SistemaGeniturinario)
     sistema_hemolinfopetico = EmbeddedDocumentField(SistemaHemolinfopetico, default=SistemaHemolinfopetico)
+    torax = EmbeddedDocumentField(Torax, default=Torax)

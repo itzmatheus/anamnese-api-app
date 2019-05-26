@@ -15,6 +15,7 @@ from apps.isda.sintomas_gerais.schemas import SintomasGeraisSchema
 from apps.isda.antecedentes.schemas import AntecedentesSchema
 from apps.isda.sistema_geniturinario.schemas import SistemaGeniturinarioSchema
 from apps.isda.sistema_hemolinfopetico.schemas import SistemaHemolinfopeticoSchema
+from apps.isda.torax.schemas import ToraxSchema
 
 
 class IsdaSchema(Schema):
@@ -28,3 +29,4 @@ class IsdaSchema(Schema):
     antecedentes = Nested(AntecedentesSchema)
     sistema_geniturinario = Nested(SistemaGeniturinarioSchema)
     sistema_hemolinfopetico = Nested(SistemaHemolinfopeticoSchema)
+    torax = Nested(ToraxSchema)
