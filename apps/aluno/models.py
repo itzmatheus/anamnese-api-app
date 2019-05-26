@@ -18,5 +18,5 @@ class Aluno(EmbeddedDocument):
     }
     nome = StringField(required=True)
     email = EmailField(max_length=50, default='')
-    matricula = IntField(required=True, unique=True)
+    matricula = IntField(required=True)
     grupo = StringField(default='')
