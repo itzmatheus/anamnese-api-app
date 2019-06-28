@@ -12,7 +12,7 @@ class SintomasGerais(EmbeddedDocument):
     Entidade sintomasgerais
     '''
     meta = {
-        'ordering': ['sintomas']
+        'ordering': 'sintomas'
     }
     sintomas = StringField(max_length=250)
     tempo = StringField(max_length=250)

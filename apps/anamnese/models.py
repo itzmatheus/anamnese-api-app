@@ -7,7 +7,8 @@ from datetime import datetime
 # Third
 from mongoengine import (
     DateTimeField,
-    EmbeddedDocumentField
+    EmbeddedDocumentField,
+    StringField,
 )
 
 
@@ -29,4 +30,6 @@ class Anamnese(db.Document):
     paciente = EmbeddedDocumentField(Paciente, default=Paciente)
     isda = EmbeddedDocumentField(Isda, default=Isda)
     exame_fisico = EmbeddedDocumentField(ExameFisico, default=ExameFisico)
+    comentarios = StringField(default='',max_length=500)
+    anotacoes_globais = StringField(default='',max_length=500)
     created_at = DateTimeField(default=datetime.now)

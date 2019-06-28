@@ -17,9 +17,9 @@ from main.db.db import db
 from apps.isda.coluna_vertebral.models import ColunaVertebral
 from apps.isda.musculos.models import Musculos
 from apps.isda.nervoso.models import Nervoso
-from apps.isda.habidos_de_vida.models import HabitosDeVida
+from apps.isda.habitos_de_vida.models import HabitosDeVida
 from apps.isda.abdome.models import Abdome
-from apps.isda.ecstocopia.models import Ecstocopia
+from apps.isda.ectoscopia.models import Ectoscopia
 from apps.isda.sintomas_gerais.models import SintomasGerais
 from apps.isda.antecedentes.models import Antecedentes
 from apps.isda.sistema_geniturinario.models import SistemaGeniturinario
@@ -37,9 +37,9 @@ class Isda(EmbeddedDocument):
         default=ColunaVertebral)
     musculos = EmbeddedDocumentField(Musculos, default=Musculos)
     nervoso = EmbeddedDocumentField(Nervoso, default=Nervoso)
-    habidos_de_vida = EmbeddedDocumentField(HabitosDeVida, default=HabitosDeVida)
+    habitos_de_vida = EmbeddedDocumentField(HabitosDeVida, default=HabitosDeVida)
     abdome = EmbeddedDocumentField(Abdome, default=Abdome)
-    ecstocopia = EmbeddedDocumentField(Ecstocopia, default=Ecstocopia)
+    ectoscopia = EmbeddedDocumentField(Ectoscopia, default=Ectoscopia)
     sintomas_gerais = EmbeddedDocumentField(SintomasGerais, default=SintomasGerais)
     antecedentes = EmbeddedDocumentField(Antecedentes, default=Antecedentes)
     sistema_geniturinario = EmbeddedDocumentField(SistemaGeniturinario, default=SistemaGeniturinario)
