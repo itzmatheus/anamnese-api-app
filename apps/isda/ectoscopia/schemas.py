@@ -4,12 +4,12 @@ from marshmallow import Schema
 from marshmallow.fields import Str
 
 
-class EcstocopiaSchema(Schema):
+class EctoscopiaSchema(Schema):
     postura_atitude = Str()
     atitude_decubito = Str()
-    iteracoes_exp_facial = Str()
+    interacoes_exp_facial = Str()
     acies = Str()
-    iteracoes_fala_linguagem = Str()
+    interacoes_fala_linguagem = Str()
     biotipo = Str()
     estado_geral = Str()
     mov_involuntarios_descricao = Str()
@@ -67,3 +67,15 @@ class EcstocopiaSchema(Schema):
     faneros_unhas_formato = Str()
     faneros_unhas_cor = Str()
     faneros_unhas_resistencia = Str()
+    interacoes_fala_linguagem_detalhes = Str()
+    interacoes_exp_facial_detalhes = Str()
+    mov_involuntarios_presenca = Str()
+    ectoscopia_outras_observacoes = Str()
+    cacifo_presenca = Str()
+    cacifo_detalhe = Str()
+    edema_consistencia = Str()
+    edema_temperatura = Str()
+    edema_temperatura_detalhe = Str()
+    ectoscopia_outras_observacoes =Str()
+    edema_presenca = Str()
+    linfonodos_presenca = Str()

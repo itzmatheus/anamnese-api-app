@@ -17,3 +17,6 @@ class AnamneseSchema(Schema):
     isda = Nested(IsdaSchema)
     exame_fisico = Nested(ExameFisicoSchema)
     created_at = DateTime()
+    comentarios = Str()
+    anotacoes_globais = Str()
+

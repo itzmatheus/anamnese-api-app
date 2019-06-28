@@ -9,18 +9,18 @@ from mongoengine import (
 )
 
 
-class Ecstocopia(EmbeddedDocument):
+class Ectoscopia(EmbeddedDocument):
     '''
-    Entidade Ecstocopia
+    Entidade Ectoscopia
     '''
     meta = {
         'ordering': ['postura_atitude']
     }
     postura_atitude = StringField(default='', max_lenght=250)
     atitude_decubito = StringField(default='', max_lenght=250)
-    iteracoes_exp_facial = StringField(default='', max_lenght=250)
+    interacoes_exp_facial = StringField(default='', max_lenght=250)
     acies = StringField(default='', max_lenght=250)
-    iteracoes_fala_linguagem = StringField(default='', max_lenght=250)
+    interacoes_fala_linguagem = StringField(default='', max_lenght=250)
     biotipo = StringField(default='', max_lenght=250)
     estado_geral = StringField(default='', max_lenght=250)
     mov_involuntarios_descricao = StringField(default='', max_lenght=250)
@@ -78,3 +78,15 @@ class Ecstocopia(EmbeddedDocument):
     faneros_unhas_formato = StringField(default='', max_lenght=250)
     faneros_unhas_cor = StringField(default='', max_lenght=250)
     faneros_unhas_resistencia = StringField(default='', max_lenght=250)
+    interacoes_fala_linguagem_detalhes = StringField(default='', max_lenght=250)
+    interacoes_exp_facial_detalhes = StringField(default='', max_lenght=250)
+    mov_involuntarios_presenca = StringField(default='', max_lenght=250)
+    ectoscopia_outras_observacoes = StringField(default="", max_length=255)
+    cacifo_presenca = StringField(default="", max_length=255)
+    cacifo_detalhe = StringField(default="", max_length=255)
+    edema_consistencia = StringField(default="", max_length=255)
+    edema_temperatura = StringField(default="", max_length=255)
+    edema_temperatura_detalhe = StringField(default="", max_length=255)
+    ectoscopia_outras_observacoes = StringField(default="", max_length=255)
+    edema_presenca = StringField(default="", max_length=255)
+    linfonodos_presenca = StringField(default="", max_length=255)

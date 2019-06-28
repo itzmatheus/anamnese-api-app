@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from marshmallow import Schema
-from marshmallow.fields import Str, Int
+from marshmallow.fields import Str, Int, DateTime
 from main.messages import MSG_FIELD_REQUIRED
 
 
@@ -17,6 +17,6 @@ class PacienteRegistrationSchema(Schema):
     religiao = Str()
     posicionamento_sexual = Str()
     nacionalidade = Str()
-    hora_inicio = Str()
+    hora_inicio = DateTime()
     idade = Int()
     enfermaria = Str()
