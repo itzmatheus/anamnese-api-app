@@ -1,4 +1,4 @@
-.PHONY: help clean test clean-build isort run
+.PHONY: help dclean test clean-build isort run
 
 .DEFAULT: help
 
